@@ -10,7 +10,7 @@ pipeline {
     stage('git pull') {
       steps {
         // git@github.com:koratoo/GitOps.git will replace by sed command before RUN
-        git url: 'git@github.com:koratoo/GitOps.git', branch: 'main'
+        git url: 'https://github.com/koratoo/GitOps.git', branch: 'main'
       }
     }
     stage('k8s deploy'){
